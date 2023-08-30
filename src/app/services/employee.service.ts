@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class EmployeeService {
   constructor(private _http: HttpClient) {}
-  const BaseURL ="https://my-json-server.typicode.com/waytologic/arpino/";
+  const BaseURL ="https://my-json-server.typicode.com/waytologic/arpino";
   addEmployee(data: any): Observable<any> {
    // return this._http.post('http://localhost:3000/employees', data);
      return this._http.post(BaseURL+'/employees', data);
